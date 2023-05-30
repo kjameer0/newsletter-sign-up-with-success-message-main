@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("assets/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("assets/fonts/Roboto-Bold.ttf");
+}
+:root {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto-Regular", "Helvetica ";
+  color: hsl(234, 29%, 20%);
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  font-family: "Roboto-Regular";
+}
+#main-illustration {
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+}
+.update-section {
+  width: 90%;
+}
+.list-text {
+  margin: 0;
+}
+.update-list::before {
+  content: "";
+  position: relative;
+  left: -10px;
+  top: 23px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 10px 0 10px;
+  margin-left: -30px;
+  height: 12px;
+  width: 10px;
+  background-image: url("assets/images/icon-list.svg");
+  background-repeat: no-repeat;
+}
+.default-para {
+  margin: 0;
+}
+.updated-heading {
+  font-size: 2.3rem;
+  font-family: "Roboto-Bold", "Times New Roman";
+}
+.email-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+}
+.email-form input {
+  border: 1px solid rgb(173, 170, 170);
+  border-radius: 10px;
+  height: 3rem;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+.email-form label {
+  text-align: left;
+  font-family: Helvetica, sans-serif;
+}
+.submit-button {
+  color: white;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  border-radius: 10px;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 20px;
+}
