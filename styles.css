@@ -11,6 +11,7 @@
   font-family: "Roboto-Regular", Helvetica;
   color: hsl(234, 29%, 20%);
   min-width: 375px;
+  background-color: white;
 }
 body {
   display: flex;
@@ -20,7 +21,6 @@ body {
   margin: 0;
   min-width: 375px;
   background-color: hsl(234, 29%, 20%);
-  height: 100vh;
 }
 #main-illustration-desktop {
   display: none;
@@ -101,17 +101,18 @@ ul {
   background-color: hsl(234, 29%, 20%);
   border-radius: 10px;
   width: 100%;
-  height: 3rem;
+  min-height: 3rem;
 }
 /* success page */
 .success {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   background-color: white;
+  min-height: 600px;
   min-width: 375px;
-  margin-left: 10px;
-  height: 100%;
+  height: 100vh;
 }
 .success > * {
   padding-left: 15px;
@@ -126,11 +127,11 @@ ul {
 }
 .success > p {
   font-size: 1rem;
-  margin-bottom: 50%;
 }
 .success > .submit-button {
+  position: absolute;
+  top: max(386px, 90%);
   width: 90%;
-  margin-top: 100px;
 }
 @media screen and (min-width: 650px) {
   :root {
